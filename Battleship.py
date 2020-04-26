@@ -4,9 +4,9 @@
 #
 # 4/26/2020
 #
-# Version 1.0
+# Version 1.1
 #
-#
+# Random module needed
 import random
 def printg(grid):
     print("     1    2    3    4    5    6    7    8    9    10")
@@ -75,7 +75,7 @@ def placepiece(grid,location,direction,piece):
                     grid[location[0]-1][tempy] = "O"
             return grid
         except Exception:
-            return "Direction Incorrent"
+            return "Direction Incorrect"
     if direction == "down":
         count = 0
         try:
