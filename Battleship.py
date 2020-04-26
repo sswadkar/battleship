@@ -39,7 +39,7 @@ def placepiece(grid,location,direction,piece):
                     grid[tempx][location[1]-1] = "O"
             return grid
         except Exception:
-            return "Direction Incorrent"
+            return "Direction Incorrect"
     if direction == "left":
         count = 0
         try:
@@ -57,7 +57,7 @@ def placepiece(grid,location,direction,piece):
                     grid[location[0]-1][tempy] = "O"
             return grid
         except Exception:
-            return "Direction Incorrent"
+            return "Direction Incorrect"
     if direction == "right":
         count = 0
         try:
@@ -93,7 +93,7 @@ def placepiece(grid,location,direction,piece):
                     grid[tempx][location[1]-1] = "O"
             return grid
         except Exception:
-            return "Direction Incorrent"
+            return "Direction Incorrect"
 #checking functions
 def check(grid,x,y):
     if grid[x-1][y-1] == "O":
